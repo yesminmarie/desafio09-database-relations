@@ -9,10 +9,10 @@ It was used Node, TypeScript, TypeORM PostgreSQL, ManyToMany relationships and s
  <a href="#how-to-run">How to run the application</a> •
 </p>
 
-<h1 id="objective">Objective</h1>
+<h1 id="objective">:bulb:Objective</h1>
 </p>This application consists in of a small e-commerce, which is possible to create customers, products and orders, allowing the customer to generate new purchase orders for certain products.</p>
 
-<h1 id="technologies">Technologies</h1>
+<h1 id="technologies">:rocket:Technologies</h1>
 
 <p>It was used these technologies in this challenge.</p>
 
@@ -23,7 +23,7 @@ It was used Node, TypeScript, TypeORM PostgreSQL, ManyToMany relationships and s
 - [Tsyringe](https://github.com/microsoft/tsyringe/ "Tsyringe")
 
 
-<h1 id="how-to-run">How to run the application</h1>
+<h1 id="how-to-run">:computer:How to run the application</h1>
 
 <h2>Pre Requiriments</h2>
 
