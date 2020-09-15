@@ -1,4 +1,4 @@
-<h1 align="center">Challenge: Database Relations</h1>
+<h1 align="center">:rocket: Challenge: Database Relations :rocket:</h1>
 
 <p align="center">This is the ninth challenge from the Rocketseat GoStack Bootcamp. In this challenge, it was developed the back-end of a small e-commerce, wich is possible to create customers, products and orders.
 It was used Node, TypeScript, TypeORM PostgreSQL, ManyToMany relationships and some concepts of architecture and design patterns.</p>
