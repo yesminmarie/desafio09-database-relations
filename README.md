@@ -10,7 +10,7 @@ It was used Node, TypeScript, TypeORM, PostgreSQL, ManyToMany relationships and 
 </p>
 
 <h1 id="objective">:bulb: Objective</h1>
-</p>This application consists in of a small e-commerce, which is possible to create customers, products and orders, allowing the customer to generate new purchase orders for certain products.</p>
+</p>This application consists in a small e-commerce, which is possible to create customers, products and orders, allowing the customer to generate new purchase orders for certain products.</p>
 
 <h1 id="technologies">:rocket: Technologies</h1>
 
