@@ -35,12 +35,12 @@ class CreateOrderService {
       throw new AppError('Could not find any customer with the given id');
     }
 
-    // verifica se todos os produtos não existem
+    // retorna todos os produtos que existem
     const existentProducts = await this.productsRepository.findAllById(
       products,
     );
 
-    // se o array for 0
+    // se o array de existentProducts for 0, então não exisite nenhum produto
     if (!existentProducts.length) {
       throw new AppError('Could not find any products with the given ids');
     }
@@ -54,9 +54,11 @@ class CreateOrderService {
     );
 
     if (checkInexistentProducts.length) {
-      throw new AppError(
-        `Could not find product ${checkInexistentProducts[0].id}`,
+      const inexistentProductsIds = checkInexistentProducts.map(
+        product => product.id,
       );
+
+      throw new AppError(`Could not find product: ${inexistentProductsIds}`);
     }
 
     const findProductsWithNoQuantityAvailable = products.filter(
@@ -66,8 +68,11 @@ class CreateOrderService {
     );
 
     if (findProductsWithNoQuantityAvailable.length) {
+      const findProductsWithNoQuantityAvailableIds = findProductsWithNoQuantityAvailable.map(
+        product => product.id,
+      );
       throw new AppError(
-        `The quantity ${findProductsWithNoQuantityAvailable[0].quantity} is not available for ${findProductsWithNoQuantityAvailable[0].id}`,
+        `The quantities of ${findProductsWithNoQuantityAvailableIds} are not available`,
       );
     }
 
